@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Smile</title>
+	<style>
+	.smile {
+		width: 400px;
+		height: 400px;
+		margin: 50px auto;
+		position: relative;
+		background: #EBC44F;
+		border-radius: 200px;
+
+	}
+	.eyes {
+		width: 60px;
+		height: 85px;
+		background: #222;
+		border-radius: 50%;
+		position: absolute;
+		top: 70px;
+		box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+		-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+		-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}	
+	
+	.eyes.left-eye {
+		left: 90px;
+		}
+		
+	.eyes.right-eye {
+		right: 90px;
+		}
+		
+	.mouth {
+		width: 200px;
+		height: 70px;
+		border: 10px solid #222;
+		border-top: 0;
+		background: rgba(0,0,0,0);
+		border-radius: 0 0 120px 120px / 0 0 90px 90px;
+		position: absolute;
+		bottom: 55px;
+		left: 85px;
+		box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+		-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+		-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}
+	
+	.corners {
+		width: 10px;
+		height: 30px;
+		background: #222;
+		border-radius: 50%;
+		position: absolute;
+		top: -12px;		
+	}
+
+	.corners.left-corner {
+		left: -12px;
+		-webkit-transform: rotate(65deg);
+		-moz-transform: rotate(65deg);		
+	}
+	
+	.corners.right-corner {
+		left: 202px;
+		-webkit-transform: rotate(-65deg);
+		-moz-transform: rotate(-65deg);		
+	}
+
+	</style>
+</head>
+<body>
+	<div class="smile">
+		<div class="eyes left-eye"></div>
+		<div class="eyes right-eye"></div>
+		<div class="mouth">
+			<div class="corners left-corner"></div>
+			<div class="corners right-corner"></div>
+		</div>
+	</div>
+</body>
+</html>
