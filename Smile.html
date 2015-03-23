@@ -4,14 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Smile</title>
 	<style>
-	.smile {
+	.item {
+		float: left;
+		position: relative;
 		width: 400px;
 		height: 400px;
-		margin: 50px auto;
-		position: relative;
+		margin: 20px;
+	}
+	.smile {
 		background: #EBC44F;
-		border-radius: 200px;
-
+		background: -webkit-gradient(linear, left top, left bottom, from(#FCFB86), to(#F7CC1B));
+		background: -moz-linear-gradient(top,  #fffe8d,  #f6d23e);
+		border-radius: 200px;	
+		box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
 	}
 	.eyes {
 		width: 60px;
@@ -21,8 +26,7 @@
 		position: absolute;
 		top: 70px;
 		box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
-		-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
-		-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+		
 	}	
 	
 	.eyes.left-eye {
@@ -35,17 +39,15 @@
 		
 	.mouth {
 		width: 200px;
-		height: 70px;
+		height: 80px;
 		border: 10px solid #222;
 		border-top: 0;
 		background: rgba(0,0,0,0);
-		border-radius: 0 0 120px 120px / 0 0 90px 90px;
+		border-radius: 0 0 110px 110px / 0 0 80px 80px;
 		position: absolute;
 		bottom: 55px;
 		left: 85px;
 		box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
-		-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
-		-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
 	}
 	
 	.corners {
@@ -72,7 +74,7 @@
 	</style>
 </head>
 <body>
-	<div class="smile">
+	<div class="item smile">
 		<div class="eyes left-eye"></div>
 		<div class="eyes right-eye"></div>
 		<div class="mouth">
