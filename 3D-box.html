@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D Box</title>
+<style>
+#box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  -webkit-animation:start 5s ease infinite;
+          animation:start 5s ease infinite;
+  -webkit-transform-style:preserve-3d;
+          transform-style:preserve-3d; 
+}
+
+.square {
+  position: absolute;
+  width: 196px;
+  height: 196px;
+  background: rgba(240,165,50,0.5);
+  border: 2px solid #000;
+  line-height: 196px;
+  text-align: center;
+  font-size: 120px;
+}
+
+.a {
+	-webkit-transform: translateZ(100px);
+	        transform: translateZ(100px);
+	
+}
+.b {
+	-webkit-transform: rotateX(-90deg) translateZ(100px) ;
+	        transform: rotateX(-90deg) translateZ(100px) ;
+}
+.c {
+	-webkit-transform:rotateX(90deg) rotateZ(-90deg) translateZ(100px);
+	        transform:rotateX(90deg) rotateZ(-90deg) translateZ(100px);
+}
+.d {
+	-webkit-transform: rotateZ(90deg) translateZ(-100px);
+	        transform: rotateZ(90deg) translateZ(-100px);
+}
+.e{
+	-webkit-transform: rotateX(-90deg ) rotateY(-90deg) translateZ(100px);
+	        transform: rotateX(-90deg ) rotateY(-90deg) translateZ(100px);
+}
+.f {
+	-webkit-transform: rotateY(90deg) translateZ(100px);
+	        transform: rotateY(90deg) translateZ(100px);
+}
+
+@-webkit-keyframes start{
+  0%{
+	-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  10%{
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  30%{
+    -webkit-transform: rotateX(-90deg) rotateZ(90deg);
+            transform: rotateX(-90deg) rotateZ(90deg);
+  }
+  50%{
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  100%{
+    -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
+}
+
+@keyframes start{
+  0%{
+	-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  10%{
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  30%{
+    -webkit-transform: rotateX(-90deg) rotateZ(90deg);
+            transform: rotateX(-90deg) rotateZ(90deg);
+  }
+  50%{
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  100%{
+    -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
+}
+
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box">
+			<div class="square a">A</div>
+	    <div class="square b">B</div>
+	    <div class="square c">C</div>
+	    <div class="square d">D</div>
+	    <div class="square e">E</div>
+	    <div class="square f">F</div>
+		</div>
+	</div>
+</body>
+</html>
