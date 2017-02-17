@@ -1,2 +1,2 @@
 # css-drawings
-Interesting [drawings](http://project.sumu.xyz/css-drawings/) created by CSS
+Interesting [drawings](http://project.zsumu.cc/css-drawings/) created by CSS
